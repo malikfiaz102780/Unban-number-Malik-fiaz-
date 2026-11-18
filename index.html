@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MALIK FIAZ ⊗ DARK HACKER UNBAN</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* خوبصورت اینیمیٹڈ ملٹی کلر بیک گراؤنڈ */
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #ff0055, #00d2ff, #7928ca);
+            background-size: 400% 400%;
+            animation: gradientBG 12s ease infinite;
+            color: #fff;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* گلاس مورفزم کارڈ ڈیزائن */
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background: rgba(15, 15, 25, 0.78);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 0 30px rgba(0, 210, 255, 0.3), 0 0 60px rgba(255, 0, 85, 0.2);
+            text-align: center;
+            position: relative;
+        }
+
+        /* اوپر والا ٹائٹل اور ڈیولپر انفو */
+        .dev-bar {
+            display: flex;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 10px 15px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(0, 255, 204, 0.3);
+        }
+
+        .dev-bar span {
+            color: #00ffcc;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 22px;
+            font-weight: 900;
+            background: linear-gradient(90deg, #00ffcc, #00d2ff, #ff007f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .skull {
+            font-size: 35px;
+            margin-bottom: 15px;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+        }
+
+        /* ویریفیکیشن اور 15 سیکنڈ اسکرین */
+        #verification-screen {
+            display: block;
+        }
+
+        .verify-box {
+            background: rgba(255, 0, 85, 0.12);
+            border: 1px solid #ff0055;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+        }
+
+        .verify-box h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 18px;
+            color: #ff4d88;
+            margin-bottom: 10px;
+        }
+
+        .timer-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 4px solid #00ffcc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 15px auto;
+            color: #00ffcc;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+        }
+
+        /* چینل بٹن */
+        .channel-card {
+            background: linear-gradient(135deg, rgba(37, 211, 102, 0.2), rgba(18, 140, 126, 0.3));
+            border: 1px solid #25D366;
+            border-radius: 14px;
+            padding: 15px;
+            margin: 18px 0;
+        }
+
+        .channel-card p {
+            font-size: 13px;
+            margin-bottom: 10px;
+            color: #e0ffe8;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(90deg, #25D366, #128C7E);
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 10px;
+            font-size: 14px;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.7);
+        }
+
+        /* مین ان بین پینل (15 سیکنڈ بعد کھلے گا) */
+        #main-panel {
+            display: none;
+        }
+
+        .input-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            font-size: 12px;
+            color: #00d2ff;
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .input-group input, .input-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .input-group input:focus {
+            border-color: #00ffcc;
+            box-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+        }
+
+        .hint-text {
+            font-size: 11px;
+            color: #ffcc00;
+            margin-top: 4px;
+        }
+
+        .btn-execute {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 12px;
+            background: linear-gradient(90deg, #ff0055, #7928ca, #00d2ff);
+            background-size: 200% auto;
+            color: #fff;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.4s;
+            margin-top: 10px;
+        }
+
+        .btn-execute:hover {
+            background-position: right center;
+            box-shadow: 0 0 20px rgba(255, 0, 85, 0.6);
+        }
+
+        /* پروگریس سیکشن */
+        #progress-section {
+            display: none;
+            margin-top: 20px;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 210, 255, 0.3);
+        }
+
+        .progress-bar-bg {
+            width: 100%;
+            height: 14px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #00ffcc, #00d2ff, #ff007f);
+            transition: width 0.3s ease;
+        }
+
+        .stage-text {
+            font-size: 12px;
+            color: #00ffcc;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        /* رزلٹ کارڈ */
+        #result-section {
+            display: none;
+            margin-top: 20px;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid #00ff88;
+            border-radius: 14px;
+            padding: 15px;
+            text-align: left;
+            font-size: 13px;
+        }
+
+        #result-section h3 {
+            color: #ff4d4d;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        #result-section p {
+            margin-bottom: 6px;
+            color: #e6e6e6;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.6);
+            font-family: 'Orbitron', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- ٹاپ ڈیولپر انفارمیشن -->
+    <div class="dev-bar">
+        <div>DEV: <span>MALIK FIAZ</span></div>
+        <div>NUM: <span>+249 11 373 7772</span></div>
+    </div>
+
+    <h1>MALIK FIAZ ⊗ DARK HACKER</h1>
+    <div class="skull">☠</div>
+
+    <!-- مرحلہ 1: پہلے چینل اور 15 سیکنڈ ویریفیکیشن -->
+    <div id="verification-screen">
+        <div class="verify-box">
+            <h2>🔴 VERIFICATION REQUIRED</h2>
+            <p style="font-size: 13px; color: #ddd;">Please join our official WhatsApp channel below while system unlocks...</p>
+            <div class="timer-circle" id="countdown">15</div>
+            <p style="font-size: 12px; color: #00d2ff;">Redirecting to Panel... Wait <span id="sec-text">15</span>s</p>
+        </div>
+
+        <div class="channel-card">
+            <p><strong>👥 𝑫𝑨𝑹𝑲 𝑯𝑨𝑪𝑲𝑬𝑹 ☠️ 🦋✨</strong><br>Get latest tools & updates</p>
+            <a href="https://whatsapp.com/channel/0029VbDFAIv8vd1SmiyHe02l" target="_blank" class="btn-whatsapp">🚀 JOIN WHATSAPP CHANNEL</a>
+        </div>
+    </div>
+
+    <!-- مرحلہ 2: 15 سیکنڈ بعد کھلنے والا مین پینل -->
+    <div id="main-panel">
+        <div class="input-group">
+            <label>SELECT BAN TYPE:</label>
+            <select id="ban-type">
+                <option value="Permanent Ban">Permanent Ban Unban</option>
+                <option value="Temporary Ban">Temporary / Spam Ban</option>
+                <option value="Business Account">WhatsApp Business Unban</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>TARGET WHATSAPP NUMBER:</label>
+            <input type="text" id="target-number" placeholder="e.g. +923001234567">
+            <div class="hint-text">* Make sure number includes country code (up to 16 characters)</div>
+        </div>
+
+        <button class="btn-execute" onclick="startProcess()">⚡ EXECUTE UNBAN</button>
+
+        <!-- لوڈنگ اور اسٹیج بار -->
+        <div id="progress-section">
+            <div class="stage-text" id="stage-label">Stage 1/9 | Target: Loading...</div>
+            <div class="progress-bar-bg">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <div class="stage-text" id="percent-label">[░░░░░░░░░░] 0%</div>
+        </div>
+
+        <!-- فائنل رزلٹ -->
+        <div id="result-section">
+            <h3>🔴 PERMANENT UNBAN SENT SUCCESSFULLY</h3>
+            <p>🎯 <strong>STATUS:</strong> <span style="color:#00ffcc;">🔴 PERMANENT UNBAN EXECUTED</span></p>
+            <p>🎯 <strong>SYSTEM:</strong> 48-HOUR restoration completed</p>
+            <p>📧 <strong>APPEALS:</strong> 15 executive appeals processed</p>
+            <p>📱 <strong>Target number:</strong> <span id="res-num" style="color:#ffcc00;"></span></p>
+            <br>
+            <p>⏱ <strong>Expected result:</strong> 24-72 hours</p>
+            <p>💯 <strong>Success rate:</strong> <span style="color:#00ff88;">58% ☠</span></p>
+            <p style="color:#ffcc00; font-size:12px; margin-top:8px;">✔ ⚠️ NOTE: THIS UNBAN IS 50/50</p>
+        </div>
+
+        <!-- نیچے بھی چینل کا بٹن -->
+        <div class="channel-card">
+            <p><strong>👥 𝑫𝑨𝑹𝑲 𝑯𝑨𝑪𝑲𝑬𝑹 ☠️ 🦋✨</strong><br>Get latest tools & updates</p>
+            <a href="https://whatsapp.com/channel/0029VbDFAIv8vd1SmiyHe02l" target="_blank" class="btn-whatsapp">🚀 JOIN WHATSAPP</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        MALIK FIAZ ☠ DARK HACKER - 2026 EDITION |
+    </div>
+</div>
+
+<script>
+    // 15 سیکنڈ کا ٹائمر لاجک
+    let timeLeft = 15;
+    const countdownEl = document.getElementById('countdown');
+    const secTextEl = document.getElementById('sec-text');
+    const verifyScreen = document.getElementById('verification-screen');
+    const mainPanel = document.getElementById('main-panel');
+
+    const timer = setInterval(() => {
+        timeLeft--;
+        countdownEl.textContent = timeLeft;
+        secTextEl.textContent = timeLeft;
+
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+            verifyScreen.style.display = 'none';
+            mainPanel.style.display = 'block';
+        }
+    }, 1000);
+
+    // پروسیسنگ اور اسٹیج بار لاجک
+    function startProcess() {
+        const numInput = document.getElementById('target-number').value.trim();
+        if (numInput === "") {
+            alert("Please enter a target number first!");
+            return;
+        }
+
+        document.getElementById('progress-section').style.display = 'block';
+        document.getElementById('result-section').style.display = 'none';
+
+        let percent = 0;
+        let stage = 1;
+        const fill = document.getElementById('progress-fill');
+        const stageLabel = document.getElementById('stage-label');
+        const percentLabel = document.getElementById('percent-label');
+
+        const processInterval = setInterval(() => {
+            percent += Math.floor(Math.random() * 12) + 5;
+            if (percent > 100) percent = 100;
+
+            stage = Math.min(9, Math.ceil((percent / 100) * 9));
+            
+            // بار گرافکس
+            const filledBlocks = Math.floor(percent / 10);
+            const emptyBlocks = 10 - filledBlocks;
+            const barVisual = '█'.repeat(filledBlocks) + '░'.repeat(emptyBlocks);
+
+            fill.style.width = percent + '%';
+            stageLabel.textContent = `Stage ${stage}/9 | Target: ${numInput}`;
+            percentLabel.textContent = `[${barVisual}] ${percent}%`;
+
+            if (percent === 100) {
+                clearInterval(processInterval);
+                setTimeout(() => {
+                    document.getElementById('res-num').textContent = numInput;
+                    document.getElementById('result-section').style.display = 'block';
+                }, 500);
+            }
+        }, 350);
+    }
+</script>
+
+</body>
+</html>
